@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+#root {
+  display: grid;
+  grid-template-rows: 4em 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: rgb(38, 43, 46);
+  color: #fff;
+  padding: 0.5em 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-title {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.canvas {
+  background-color: rgb(254, 251, 235);
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    #f7e9b6 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  padding: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.sticky {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 2em 2em 0;
+  z-index: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sticky > * {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.022),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.03),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.039),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.045),
+    100px 100px 80px rgba(0, 0, 0, 0.06);
 }

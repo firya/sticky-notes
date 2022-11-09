@@ -1,0 +1,44 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+.container {
+  margin: auto;
+  background-color: #fff;
+  min-width: 320px;
+  width: 600px;
+  border-radius: 5px;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.header:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  left: 1em;
+  right: 1em;
+  bottom: 0;
+}
+.title {
+  font-size: 1.5em;
+}
+.content {
+  padding: 1em;
+}
